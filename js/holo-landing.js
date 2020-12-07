@@ -1,3 +1,5 @@
+$('head').append('<link rel="stylesheet" type="text/css" href="../css/style.css">');
+
 var bodyRect;
 var header_el;
 var locked = false;
