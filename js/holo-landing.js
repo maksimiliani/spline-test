@@ -33,11 +33,11 @@ function update_header(colourr) {
     }
   }
 
-  header_el = $("#navigation");
+  header_el = $(".navbar-master");
   bodyRect = document.body.getBoundingClientRect();
 
   for (var i=0; i < sections_color.length; i++) {
-    var offset1 = sections_color[i].getBoundingClientRect().top - bodyRect.top - header_el.offsetHeight;
+    var offset1 = sections_color[i].getBoundingClientRect().top - bodyRect.top - header_el[0].offsetHeight;
     var offset2 = sections_color[i].getBoundingClientRect().top - bodyRect.top + sections_color[i].getBoundingClientRect().height - header_el[0].offsetHeight;
     if (i < sections_color.length-1)
       offset2 = sections_color[i+1].getBoundingClientRect().top - bodyRect.top - header_el[0].offsetHeight;
@@ -46,15 +46,14 @@ function update_header(colourr) {
         if ((i == 0) && (colourr != null)) {
           new_colourr = colourr;
         }
-        if (header_shrinked) {header_el[0].style.backgroundColor = new_colourr;} else {header_el[0].style.background = "none";}
         if (isNight(colourr)) {
-          $('#navigation .nav-link').addClass('night');
-          $('#navigation .logo').addClass('night');
-          $('#navigation .menu-button').addClass('night');
+          $('.navbar-master .nav-link').addClass('night');
+          $('.navbar-master .logo').addClass('night');
+          $('.navbar-master .menu-button').addClass('night');
         } else {
-          $('#navigation .nav-link').removeClass('night');
-          $('#navigation .logo').removeClass('night');
-          $('#navigation .menu-button').removeClass('night');
+          $('.navbar-master .nav-link').removeClass('night');
+          $('.navbar-master .logo').removeClass('night');
+          $('.navbar-master .menu-button').removeClass('night');
         }
         locked = false;
         break;
@@ -65,12 +64,13 @@ function update_header(colourr) {
 $(document).ready(function() {
 
   sections_color = document.getElementsByClassName("section");
-  
+
   $(window).scroll(function() {
     if (!locked) {
       locked = true;
       setTimeout(update_header(null), 150);
     }
   });
+    console.log(header_el);
 
 });
