@@ -64,6 +64,8 @@ function update_header(colourr) {
 
 $(document).ready(function() {
 
+  sections_color = document.getElementsByClassName("section");
+  
   $(window).scroll(function() {
     if (!locked) {
       locked = true;
