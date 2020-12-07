@@ -71,6 +71,8 @@ $(document).ready(function() {
       setTimeout(update_header(null), 150);
     }
   });
-    console.log(header_el);
+
+  locked = true;
+  update_header(null);
 
 });
