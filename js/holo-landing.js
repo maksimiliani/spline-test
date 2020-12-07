@@ -51,6 +51,9 @@ function update_header(colourr) {
           $('.navbar-master .logo').addClass('night');
           $('.navbar-master .menu-button').addClass('night');
         } else {
+          $('.navbar-master .nav-link').removeClass('night');
+          $('.navbar-master .logo').removeClass('night');
+          $('.navbar-master .menu-button').removeClass('night');
         }
         locked = false;
         break;
