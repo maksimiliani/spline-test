@@ -56,7 +56,7 @@ function update_header(colourr) {
           $('#navigation .logo').removeClass('night');
           $('#navigation .menu-button').removeClass('night');
         }
-        locked = false;
+        locked = false; 
         break;
       }
     }
@@ -65,7 +65,7 @@ function update_header(colourr) {
 $(document).ready(function() {
 
   sections_color = document.getElementsByClassName("section");
-  
+
   $(window).scroll(function() {
     if (!locked) {
       locked = true;
