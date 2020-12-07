@@ -46,7 +46,7 @@ function update_header(colourr) {
         if ((i == 0) && (colourr != null)) {
           new_colourr = colourr;
         }
-        if (isNight(colourr)) {
+        if (isNight(new_colourr)) {
           $('.navbar-master .nav-link').addClass('night');
           $('.navbar-master .logo').addClass('night');
           $('.navbar-master .menu-button').addClass('night');
