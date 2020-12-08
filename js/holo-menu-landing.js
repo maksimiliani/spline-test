@@ -1,4 +1,3 @@
-import 'https://cdnjs.cloudflare.com/ajax/libs/attrchange/2.0.1/attrchange.min.js';
 $('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/maksimiliani/spline-test@34f8b1f/css/style.css">');
 
 var bodyRect;
