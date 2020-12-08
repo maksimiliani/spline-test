@@ -1,3 +1,4 @@
+import 'https://cdnjs.cloudflare.com/ajax/libs/attrchange/2.0.1/attrchange.min.js';
 $('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/maksimiliani/spline-test@34f8b1f/css/style.css">');
 
 var bodyRect;
@@ -76,5 +77,19 @@ $(document).ready(function() {
 
   locked = true;
   update_header(null);
+
+  $(".w-nav-overlay").attrchange({
+    trackValues: true,
+    callback: function(event) {
+      var mobile_menu = document.getElementsByClassName("w-nav-overlay");
+        if (mobile_menu[0].style.display === "none") {
+          update_header(null);
+        } else {
+          $('.navbar-master .nav-link').addClass('night');
+          $('.navbar-master .logo').addClass('night');
+          $('.navbar-master .menu-button').addClass('night');
+        }
+      }
+    });
 
 });
