@@ -1,14 +1,16 @@
 .w-nav-overlay {top: 0;}
 
 .accordion-item > .accordion-heading:after {
-  background: url('https://uploads-ssl.webflow.com/5fc3c5f4c755c637411adfb2/5fc6c657c161ef3141e07cf8_icon-arrow-down.svg') center no-repeat;
+  background: url('https://uploads-ssl.webflow.com/5fc3c5f4c755c637411adfb2/5fc6c657c62b7f2772b32eba_icon-arrow-up.svg') center no-repeat;
   position: absolute;
   display: block;
   width: 13px;
   height: 14px;
   top: 2px;
+  right:0;
   transition: .3s all;
   transform: rotate(-180deg);
+  content:'';
 }
 
 .accordion-item.active > .accordion-heading:after {
