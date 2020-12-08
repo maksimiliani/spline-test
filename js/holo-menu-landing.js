@@ -1,4 +1,4 @@
-$('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/maksimiliani/spline-test@82eb435/css/style.css">');
+$('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/maksimiliani/spline-test@089dc6c/css/style.css">');
 
 var bodyRect;
 var header_el;
