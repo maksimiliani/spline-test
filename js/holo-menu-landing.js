@@ -74,7 +74,6 @@ $(document).ready(function() {
     }
   });
 
-  locked = true;
   update_header(null);
 
   $(".w-nav-overlay").attrchange({
