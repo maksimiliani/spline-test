@@ -81,11 +81,11 @@ $(document).ready(function() {
 
   const checkbox = document.getElementById('special_check')
   checkbox.addEventListener('change', (event) => {
+    var special_input = document.getElementById("special_input");
     if (event.currentTarget.checked) {
-      var special_input = document.getElementsByClassName("special_input");
-      special_input[0].style.display = "block";
+      special_input.style.display = "block";
     } else {
-      special_input[0].style.display = "none";
+      special_input.style.display = "none";
     }
   })
 
