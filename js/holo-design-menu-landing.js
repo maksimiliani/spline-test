@@ -80,7 +80,7 @@ $(document).ready(function() {
   //$('.navbar-master .menu-button').addClass('night');
 
   const special_checkbox = $('#special_check');
-  special_checkbox[0].addEventListener('click', (event) => {
+  special_checkbox[0].addEventListener('mouseUp', (event) => {
     var checkbox0 = $('#special_check .w-checkbox-input');
     if (checkbox0.attr('class').split(' ').slice(-1)[0] === "w--redirected-checked") {
       $('#special_input').removeClass('hidden');
