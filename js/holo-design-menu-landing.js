@@ -83,10 +83,12 @@ $(document).ready(function() {
   checkbox.addEventListener('change', (event) => {
     if (event.currentTarget.checked) {
       $('#special_input').removeClass('hidden');
+      console.log("show");
     } else {
       $('#special_input').addClass('hidden');
+      console.log("hide");
     }
-  })
+  });
 
   $(".w-nav-overlay").attrchange({
     trackValues: true,
