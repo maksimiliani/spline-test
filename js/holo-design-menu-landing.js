@@ -79,9 +79,10 @@ $(document).ready(function() {
   //$('.navbar-master .logo').addClass('night');
   //$('.navbar-master .menu-button').addClass('night');
 
-  const checkbox = document.getElementById('special_check')
-  checkbox.addEventListener('change', (event) => {
-    if (event.currentTarget.checked) {
+  var checkbox = $('#special_check');
+  checkbox.addEventListener('click', (event) => {
+    var checkbox0 = $('#special_check .w-checkbox-input');
+    if (checkbox0.attr('class').split(' ').slice(-1)[0] === "w--redirected-checked") {
       $('#special_input').removeClass('hidden');
       console.log("show");
     } else {
