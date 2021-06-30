@@ -82,7 +82,7 @@ $(document).ready(function() {
   const special_checkbox = $('#special_check');
   special_checkbox[0].addEventListener('mouseup', (event) => {
     var checkbox0 = $('#special_check .w-checkbox-input');
-    if (checkbox0.attr('class').split(' ').slice(-1)[0] === "w--redirected-checked") {
+    if (checkbox0.attr('class').split(' ').slice(-1)[0] == "w--redirected-checked") {
       $('#special_input').removeClass('hidden');
       console.log("show");
     } else {
