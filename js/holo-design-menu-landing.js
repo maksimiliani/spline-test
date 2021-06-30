@@ -91,18 +91,4 @@ $(document).ready(function() {
     }
   });
 
-  $(".w-nav-overlay").attrchange({
-    trackValues: true,
-    callback: function(event) {
-      var mobile_menu = document.getElementsByClassName("w-nav-overlay");
-        if (mobile_menu[0].style.display === "none") {
-          update_header(null);
-        } else {
-          $('.navbar-master .nav-link').addClass('night');
-          $('.navbar-master .logo').addClass('night');
-          $('.navbar-master .menu-button').addClass('night');
-        }
-      }
-    });
-
 });
