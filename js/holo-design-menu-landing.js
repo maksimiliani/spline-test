@@ -79,6 +79,16 @@ $(document).ready(function() {
   //$('.navbar-master .logo').addClass('night');
   //$('.navbar-master .menu-button').addClass('night');
 
+  const checkbox = document.getElementById('special_check')
+  checkbox.addEventListener('change', (event) => {
+    if (event.currentTarget.checked) {
+      var special_input = document.getElementsByClassName("special_input");
+      special_input[0].style.display = "block";
+    } else {
+      special_input[0].style.display = "none";
+    }
+  })
+
   $(".w-nav-overlay").attrchange({
     trackValues: true,
     callback: function(event) {
