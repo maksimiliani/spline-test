@@ -79,14 +79,14 @@ $(document).ready(function() {
   //$('.navbar-master .logo').addClass('night');
   //$('.navbar-master .menu-button').addClass('night');
 
-  const special_checkbox = $('#special_check');
+  const special_checkbox = $('#Advise-custom');
   special_checkbox[0].addEventListener('mouseup', (event) => {
-    var checkbox0 = $('#special_check .w-checkbox-input');
+    var checkbox0 = $('#Advise-custom .w-checkbox-input');
     if (checkbox0.attr('class').split(' ').slice(-1)[0] != "w--redirected-checked") {
-      $('#special_input').removeClass('hidden');
+      $('#Advise-custom-form').removeClass('hidden');
       console.log("show");
     } else {
-      $('#special_input').addClass('hidden');
+      $('#Advise-custom-form').addClass('hidden');
       console.log("hide");
     }
   });
