@@ -85,17 +85,16 @@ $(document).ready(function() {
   //$('.navbar-master .nav-link').addClass('night');
   //$('.navbar-master .logo').addClass('night');
   //$('.navbar-master .menu-button').addClass('night');
-
-  const special_checkbox = $('#Advise-custom');
-  special_checkbox[0].addEventListener('mouseup', (event) => {
-    var checkbox0 = $('#Advise-custom .w-checkbox-input');
-    if (checkbox0.attr('class').split(' ').slice(-1)[0] != "w--redirected-checked") {
-      $('#Advise-custom-form').removeClass('hidden');
-      console.log("show");
-    } else {
-      $('#Advise-custom-form').addClass('hidden');
-      console.log("hide");
-    }
-  });
+  if (document.querySelector(".myclass") != null) {
+    const special_checkbox = $('#Advise-custom');
+    special_checkbox[0].addEventListener('mouseup', (event) => {
+      var checkbox0 = $('#Advise-custom .w-checkbox-input');
+      if (checkbox0.attr('class').split(' ').slice(-1)[0] != "w--redirected-checked") {
+        $('#Advise-custom-form').removeClass('hidden');
+      } else {
+        $('#Advise-custom-form').addClass('hidden');
+      }
+    });
+  }
 
 });
