@@ -65,7 +65,7 @@ function update_header(colourr) {
 
 $(document).ready(function() {
 
-  if (document.cookie.indexOf("accepted_cookies=") < 0) {
+  if (document.cookie.indexOf("accepted_cookies") < 0) {
     $('#cookie_message').removeClass('hidden');
   }
   $('#accept_cookies').on('click', function() {
