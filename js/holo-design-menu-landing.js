@@ -85,7 +85,7 @@ $(document).ready(function() {
   //$('.navbar-master .nav-link').addClass('night');
   //$('.navbar-master .logo').addClass('night');
   //$('.navbar-master .menu-button').addClass('night');
-  if (document.querySelector(".myclass") != null) {
+  if (document.querySelector('#Advise-custom') != null) {
     const special_checkbox = $('#Advise-custom');
     special_checkbox[0].addEventListener('mouseup', (event) => {
       var checkbox0 = $('#Advise-custom .w-checkbox-input');
