@@ -37,6 +37,7 @@ function update_header(colourr) {
 
   header_el = $(".navbar-master");
   bodyRect = document.body.getBoundingClientRect();
+  console.log(document.body.getBoundingClientRect());
 
   for (var i=0; i < sections_color.length; i++) {
     var offset1 = sections_color[i].getBoundingClientRect().top - bodyRect.top - header_el[0].offsetHeight;
