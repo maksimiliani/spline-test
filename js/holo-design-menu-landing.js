@@ -58,10 +58,10 @@ function update_header(colourr) {
           $('.navbar-master .logo').removeClass('night');
           $('.navbar-master .menu-button').removeClass('night');
         }
-        locked = false;
         break;
       }
     }
+    locked = false;
 }
 
 $(document).ready(function() {
