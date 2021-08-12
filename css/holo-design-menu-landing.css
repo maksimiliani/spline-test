@@ -1,5 +1,6 @@
-h2.prtnr_gradient {
-  background: -webkit-linear-gradient(#2CC6FF, #8595FF, #C474E7);
+.prtnr_gradient {
+  background: -webkit-linear-gradient(45deg, #2CC6FF, #8595FF, #C474E7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background
 }
