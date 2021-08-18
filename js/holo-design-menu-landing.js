@@ -72,6 +72,16 @@ $(document).ready(function() {
     document.cookie = "accepted_cookies=yes;"
   });
 
+  if (document.cookie.indexOf("show_promo") < 0) {
+    $('#promo').removeClass('hidden');
+  }
+  $('#promo_close').on('click', function() {
+    document.cookie = "show_promo=0;"
+  });
+  $('#promo_attend').on('click', function() {
+    document.cookie = "show_promo=0;"
+  });
+
   sections_color = document.getElementsByClassName("d_section");
 
   $(window).scroll(function() {
